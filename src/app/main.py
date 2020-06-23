@@ -30,3 +30,5 @@ def createPlayer():
         connection.commit()
     finally:
         connection.close()
+
+createPlayer()
