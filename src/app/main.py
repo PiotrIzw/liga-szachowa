@@ -7,9 +7,14 @@ connection = pymysql.Connect(
     db='LigaSzachowa'
 )
 
-sql = "INSERT INTO `booking` (`id`, `offer_id`, `total_price`, `payment_deadline`, `paid`, `client_id`)" \
-          " VALUES ('%s', '%s', '%s', '%s', '%s', '%s');" % (id, offer_id, total_price, payment_deadline,
-            paid, client_id)
+def createPlayer():
+    name = input("Podaj imię zawodnika: \n")
+    surname = input("Podaj nazwisko: \n")
+    country = input("Podaj kraj pochodzenia: \n")
+    byear = input("Podaj rok urodzenia (YYYY-MM-DD): \n")
+
+    sql = "INSERT INTO `ListaZawodnikow` (`Name`, `Surname`, `Country`, `BYear`)" \
+          " VALUES ('%s', '%s', '%s', '%s');" % (name, surname, country, byear)
     print(sql)
     try:
         with connection.cursor() as cursor:
@@ -21,3 +26,5 @@ sql = "INSERT INTO `booking` (`id`, `offer_id`, `total_price`, `payment_deadline
                 for r in row:
                     print(r, end=' ')
         connection.commit()
+    finally:
+        connection.close()
