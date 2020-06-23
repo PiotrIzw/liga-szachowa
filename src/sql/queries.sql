@@ -18,7 +18,7 @@ CREATE TABLE ListaZawodnikow (
     PRIMARY KEY(PlayerID)
     );
 
-#Tworzenie tabeli ListaZawodnikow
+#Tworzenie tabeli RozegraneMecze
 CREATE TABLE RozegraneMecze (
     MatchID int(11) NOT NULL AUTO_INCREMENT,
     DataRozegrania DATE NOT NULL,
@@ -32,6 +32,7 @@ CREATE TABLE RozegraneMecze (
     FOREIGN KEY (Gracz2) REFERENCES ListaZawodnikow(PlayerID)
     );
 
+#Tworzenie tabeli ListaTurniejow
 CREATE TABLE ListaTurniejow (
     TournamentID int(11) NOT NULL AUTO_INCREMENT,
     Nazwa varchar(255) NOT NULL,
@@ -40,6 +41,7 @@ CREATE TABLE ListaTurniejow (
     PRIMARY KEY(TournamentID)
     );
 
+#Tworzenie tabeli RankingWOMEN
 CREATE TABLE RankingWOMEN (
     Pozycja int(11) NOT NULL AUTO_INCREMENT,
     PlayerID int(11) NOT NULL UNIQUE,
@@ -47,6 +49,7 @@ CREATE TABLE RankingWOMEN (
     PRIMARY KEY(Pozycja)
     );
 
+#Tworzenie tabeli RankingJUNIORS
 CREATE TABLE RankingJUNIORS (
     Pozycja int(11) NOT NULL AUTO_INCREMENT,
     PlayerID int(11) NOT NULL UNIQUE,
@@ -54,6 +57,7 @@ CREATE TABLE RankingJUNIORS (
     PRIMARY KEY(Pozycja)
     );
 
+#Tworzenie tabeli RankingOPEN
 CREATE TABLE RankingOPEN (
     Pozycja int(11) NOT NULL AUTO_INCREMENT,
     PlayerID int(11) NOT NULL UNIQUE,
