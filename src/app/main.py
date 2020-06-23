@@ -3,6 +3,7 @@ import os
 from src.app import Player
 
 
+
 while True:
     print("Menu:")
     print("1. Zawodnik:")
