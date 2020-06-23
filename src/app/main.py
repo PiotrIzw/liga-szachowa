@@ -7,6 +7,8 @@ connection = pymysql.Connect(
     db='LigaSzachowa'
 )
 
+
+
 def createPlayer():
     name = input("Podaj imię zawodnika: \n")
     surname = input("Podaj nazwisko: \n")
