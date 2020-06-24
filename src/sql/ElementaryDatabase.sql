@@ -18,6 +18,15 @@ CREATE TABLE ListaZawodnikow (
     PRIMARY KEY(PlayerID)
     );
 
+#Tworzenie tabeli ListaTurniejow
+CREATE TABLE ListaTurniejow (
+    TournamentID int(11) NOT NULL AUTO_INCREMENT,
+    Nazwa varchar(255) NOT NULL,
+    MiejsceStartu varchar(255) NOT NULL,
+    DataStartu DATETIME NOT NULL,
+    PRIMARY KEY(TournamentID)
+    );
+
 #Tworzenie tabeli RozegraneMecze
 CREATE TABLE RozegraneMecze (
     MatchID int(11) NOT NULL AUTO_INCREMENT,
@@ -33,14 +42,6 @@ CREATE TABLE RozegraneMecze (
     FOREIGN KEY (TurniejID) REFERENCES ListaTurniejow(TournamentID)
     );
 
-#Tworzenie tabeli ListaTurniejow
-CREATE TABLE ListaTurniejow (
-    TournamentID int(11) NOT NULL AUTO_INCREMENT,
-    Nazwa varchar(255) NOT NULL,
-    MiejsceStartu varchar(255) NOT NULL,
-    DataStartu DATETIME NOT NULL,
-    PRIMARY KEY(TournamentID)
-    );
 
 #Tworzenie tabeli Ranking
 CREATE TABLE Ranking (
