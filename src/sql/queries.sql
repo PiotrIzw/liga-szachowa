@@ -5,13 +5,13 @@ DROP DATABASE LigaSzachowa;
 CREATE DATABASE LigaSzachowa;
 
 #Uzycie bazy
-USE LigaSzachowa
+USE LigaSzachowa;
 
 
 #Tworzenie tabeli ListaZawodnikow
 CREATE TABLE ListaZawodnikow (
     PlayerID int(11) NOT NULL AUTO_INCREMENT,
-    Name varchar(255) NOT NULL,
+    FirstName varchar(255) NOT NULL,
     Surname varchar(255) NOT NULL,
     Country varchar(255) NOT NULL,
     BYear DATE NOT NULL,
@@ -41,26 +41,12 @@ CREATE TABLE ListaTurniejow (
     PRIMARY KEY(TournamentID)
     );
 
-#Tworzenie tabeli RankingWOMEN
-CREATE TABLE RankingWOMEN (
+#Tworzenie tabeli Ranking
+CREATE TABLE Ranking (
     Pozycja int(11) NOT NULL AUTO_INCREMENT,
     PlayerID int(11) NOT NULL UNIQUE,
     Rating varchar(255) NOT NULL,
+    Kategoria varchar(255) NOT NULL,
     PRIMARY KEY(Pozycja)
     );
 
-#Tworzenie tabeli RankingJUNIORS
-CREATE TABLE RankingJUNIORS (
-    Pozycja int(11) NOT NULL AUTO_INCREMENT,
-    PlayerID int(11) NOT NULL UNIQUE,
-    Rating varchar(255) NOT NULL,
-    PRIMARY KEY(Pozycja)
-    );
-
-#Tworzenie tabeli RankingOPEN
-CREATE TABLE RankingOPEN (
-    Pozycja int(11) NOT NULL AUTO_INCREMENT,
-    PlayerID int(11) NOT NULL UNIQUE,
-    Rating varchar(255) NOT NULL,
-    PRIMARY KEY(Pozycja)
-    );
