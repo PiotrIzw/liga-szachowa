@@ -28,10 +28,11 @@ INSERT INTO ListaZawodnikow (FirstName, Surname, Country, BYear) VALUES
 ('Marek', 'Kowalski', 'Polska', '2000-12-29'),
 ('Edward', 'Woźniak', 'Polska', '2002-12-29'),
 ('Marek', 'Markowski', 'Polska', '1994-12-29'),
+('Marcin', 'Gagatek', 'Polska', '1978-12-29'),
 ('Olga', 'Badelka', 'Białoruś', '2002-12-29');
 
 INSERT INTO ligaszachowa.listaturniejow (Nazwa, MiejsceStartu, DataStartu) VALUES
-('Mistrzostwa Polski', 'Krakow', '2020-08-23 12:30:00'),
+('Mistrzostwa Polski', 'Krakow', '2020-05-23 12:30:00'),
 ('Styria Spring Rapid Serie 2020 Termin 4', 'Graz', '2020-08-24 12:30:00'),
 ('IV IRT STD Memorial Walter Cortinhas ALEX 2020', 'Rio de Janeiro', '2020-09-23 12:30:00'),
 ('Brim motarodin 2020-21 - Mot 1 - 1.-4. umferd', 'Reykjavik', '2020-08-13 12:30:00'),
@@ -43,10 +44,12 @@ INSERT INTO ligaszachowa.listaturniejow (Nazwa, MiejsceStartu, DataStartu) VALUE
 ('	100th Anniversary of E.Kogan - blitz', 'Odessa', '2020-08-23 12:30:00');
 
 INSERT INTO ligaszachowa.rozegranemecze (DataRozegrania, TurniejID, Kategoria, Gracz1, Gracz2, Wynik, Etap) VALUES
-('2020-08-23', '1', 'OPEN', '1', '27', 'Wygrana bialych','Faza grupowa'),
-('2020-08-23', '1', 'OPEN', '29', '28', 'Wygrana czarnych','Faza grupowa'),
-('2020-08-23', '1', 'OPEN', '1', '29', 'Wygrana bialych','Faza grupowa'),
-('2020-08-23', '1', 'OPEN', '27', '28', 'Wygrana bialych','Faza grupowa'),
-('2020-08-23', '1', 'OPEN', '25', '29', 'Remis','Faza grupowa'),
-('2020-08-23', '1', 'OPEN', '26', '27', 'Wygrana bialych','Faza grupowa'),
-('2020-08-23', '1', 'OPEN', '26', '25', 'Remis','Faza grupowa');
+('2020-05-23', '1', 'OPEN', '27', '1', 'Remis','Cwiercfinal'),
+('2020-05-23', '1', 'OPEN', '29', '28', 'Wygrana czarnych','Cwiercfinal'),
+('2020-05-23', '1', 'OPEN', '14', '26', 'Wygrana bialych','Cwiercfinal'),
+('2020-05-23', '1', 'OPEN', '25', '30', 'Wygrana bialych','Cwiercfinal'),
+('2020-05-23', '1', 'OPEN', '1', '27', 'Wygrana bialych','Cwiercfinal'),
+('2020-05-24', '1', 'OPEN', '1', '28', 'Remis','Polfinal'),
+('2020-05-24', '1', 'OPEN', '14', '25', 'Wygrana bialych','Polfinal'),
+('2020-05-24', '1', 'OPEN', '28', '1', 'Wygrana bialych','Polfinal'),
+('2020-05-25', '1', 'OPEN', '28', '14', 'Wygrana bialych','Final');
