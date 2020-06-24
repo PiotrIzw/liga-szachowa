@@ -38,7 +38,7 @@ CREATE TABLE RozegraneMecze (
     Wynik varchar(255) NOT NULL,
     PRIMARY KEY(MatchID),
     FOREIGN KEY (Gracz1) REFERENCES ListaZawodnikow(PlayerID),
-    FOREIGN KEY (Gracz2) REFERENCES ListaZawodnikow(PlayerID)
+    FOREIGN KEY (Gracz2) REFERENCES ListaZawodnikow(PlayerID),
     FOREIGN KEY (TurniejID) REFERENCES ListaTurniejow(TournamentID)
     );
 
