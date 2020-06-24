@@ -8,12 +8,12 @@ WHERE Ranking.Kategoria='OPEN'
 ORDER BY Ranking.Rating ASC;
 
 #2
-#Wybiera zawodnikow wedlug najwiekszej liczby punktow ze wszystkich kategorii o kraju pochodzenia Polska
+#Wybiera zawodnikow wedlug najwiekszej liczby punktow z kategorii OPEN o kraju pochodzenia Polska
 
 SELECT ListaZawodnikow.PlayerID, ListaZawodnikow.FirstName, ListaZawodnikow.Surname, ListaZawodnikow.Country, Ranking.Rating, Ranking.Kategoria
 FROM ListaZawodnikow
 INNER JOIN Ranking ON ListaZawodnikow.PlayerID = Ranking.PlayerID
-WHERE ListaZawodnikow.Country='Polska'
+WHERE ListaZawodnikow.Country='Polska' AND Ranking.Kategoria='OPEN'
 ORDER BY Ranking.Rating ASC;
 
 #3

@@ -47,7 +47,7 @@ CREATE TABLE RozegraneMecze (
 #Tworzenie tabeli Ranking
 CREATE TABLE Ranking (
     RankingID int(11) NOT NULL AUTO_INCREMENT,
-    PlayerID int(11) NOT NULL UNIQUE,
+    PlayerID int(11) NOT NULL,
     Rating int(11) NOT NULL,
     Kategoria varchar(255) NOT NULL,
     PRIMARY KEY(RankingID),
