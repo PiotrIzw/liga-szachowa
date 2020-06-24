@@ -5,7 +5,7 @@ SELECT ListaZawodnikow.PlayerID, ListaZawodnikow.FirstName, ListaZawodnikow.Surn
 FROM ListaZawodnikow
 INNER JOIN Ranking ON ListaZawodnikow.PlayerID = Ranking.PlayerID
 WHERE Ranking.Kategoria='OPEN'
-ORDER BY Ranking.Rating ASC;
+ORDER BY Ranking.Rating DESC;
 
 #2
 #Wybiera zawodnikow wedlug najwiekszej liczby punktow z kategorii OPEN o kraju pochodzenia Polska
@@ -14,7 +14,7 @@ SELECT ListaZawodnikow.PlayerID, ListaZawodnikow.FirstName, ListaZawodnikow.Surn
 FROM ListaZawodnikow
 INNER JOIN Ranking ON ListaZawodnikow.PlayerID = Ranking.PlayerID
 WHERE ListaZawodnikow.Country='Polska' AND Ranking.Kategoria='OPEN'
-ORDER BY Ranking.Rating ASC;
+ORDER BY Ranking.Rating DESC;
 
 #3
 #Wybiera zawodnikow wedlug najwiekszej liczby punktow z kategorii JUNIORS powyzej roku urodzenia 2002.
@@ -23,7 +23,7 @@ SELECT ListaZawodnikow.PlayerID, ListaZawodnikow.FirstName, ListaZawodnikow.Surn
 FROM ListaZawodnikow
 INNER JOIN Ranking ON ListaZawodnikow.PlayerID = Ranking.PlayerID
 WHERE Ranking.Kategoria='JUNIORS' AND ListaZawodnikow.BYear>='2002-01-01'
-ORDER BY Ranking.Rating ASC;
+ORDER BY Ranking.Rating DESC;
 
 #4
 #Wyswietla zawodnikow od najmlodszych do najstarszych
