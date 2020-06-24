@@ -60,22 +60,22 @@ FROM ListaZawodnikow
 ORDER BY Surname ASC;
 
 #9
-#Wyswietla dane statysyczne - jak wiele razy wygrały białe (Gracz1 = biale)
+#Wyswietla dane statystyczne - jak wiele razy wygrały białe (Gracz1 = biale)
 SELECT COUNT(*)
 FROM   RozegraneMecze
-WHERE  Wynik = 'Wygrana bialych'
+WHERE  Wynik = 'Wygrana bialych';
 
 #10
-#Wyswietla dane statysyczne - jak wiele razy wygrały czarne (Gracz2 = czarne)
+#Wyswietla dane statystyczne - jak wiele razy wygrały czarne (Gracz2 = czarne)
 SELECT COUNT(*)
 FROM   RozegraneMecze
-WHERE  Wynik = 'Wygrana czarnych'
+WHERE  Wynik = 'Wygrana czarnych';
 
 #11
-#Wyswietla dane statysyczne - jak wiele razy wystąpił remis
+#Wyswietla dane statystyczne - jak wiele razy wystąpił remis
 SELECT COUNT(*)
 FROM   RozegraneMecze
-WHERE  Wynik = 'Remis'
+WHERE  Wynik = 'Remis';
 
 
 
