@@ -26,11 +26,12 @@ WHERE Ranking.Kategoria='JUNIOR' AND ListaZawodnikow.BYear>='2000-01-01'
 ORDER BY Ranking.Rating DESC;
 
 #4
-#Wyswietla zawodnikow od najmlodszych do najstarszych
+#Wyswietla 10 pierwszych zawodnikow od najmlodszych do najstarszych
 
 SELECT PlayerID, FirstName, Surname, Country, BYear
 FROM ListaZawodnikow
-ORDER BY BYear DESC;
+ORDER BY BYear DESC
+LIMIT 10;
 
 #5
 #Wyswietla liste wszystkich turniejow ktore sie jeszcze nie odbyly
