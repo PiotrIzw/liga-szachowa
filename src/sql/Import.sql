@@ -41,3 +41,12 @@ INSERT INTO ligaszachowa.listaturniejow (Nazwa, MiejsceStartu, DataStartu) VALUE
 ('	Days of Wloclawek 2020', 'Wloclawek', '2020-10-23 12:30:00'),
 ('	IV Amatorska Liga Szachowa w Lublinie 2020', 'Lublin', '2020-08-26 12:30:00'),
 ('	100th Anniversary of E.Kogan - blitz', 'Odessa', '2020-08-23 12:30:00');
+
+INSERT INTO ligaszachowa.rozegranemecze (DataRozegrania, TurniejID, Kategoria, Gracz1, Gracz2, Wynik, Etap) VALUES
+('2020-08-23', '1', 'OPEN', '1', '27', 'Wygrana bialych','Faza grupowa'),
+('2020-08-23', '1', 'OPEN', '29', '28', 'Wygrana czarnych','Faza grupowa'),
+('2020-08-23', '1', 'OPEN', '1', '29', 'Wygrana bialych','Faza grupowa'),
+('2020-08-23', '1', 'OPEN', '27', '28', 'Wygrana bialych','Faza grupowa'),
+('2020-08-23', '1', 'OPEN', '25', '29', 'Remis','Faza grupowa'),
+('2020-08-23', '1', 'OPEN', '26', '27', 'Wygrana bialych','Faza grupowa'),
+('2020-08-23', '1', 'OPEN', '26', '25', 'Remis','Faza grupowa');
