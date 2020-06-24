@@ -39,9 +39,9 @@ INSERT INTO ligaszachowa.listaturniejow (Nazwa, MiejsceStartu, DataStartu) VALUE
 ('The Chess Academy Activekids Spring Open 2020', 'Hong Kong', '2020-07-23 12:30:00'),
 ('3nd stage Grand-Prix_Kaissa Rapid 2020_Amateurs', 'Moscow', '2020-07-20 12:30:00'),
 ('21. runda Grand Prix Bialegostoku "Zima-Wiosna 2020" - blitz', 'Bialystok', '2021-08-23 12:30:00'),
-('	Days of Wloclawek 2020', 'Wloclawek', '2020-10-23 12:30:00'),
-('	IV Amatorska Liga Szachowa w Lublinie 2020', 'Lublin', '2020-08-26 12:30:00'),
-('	100th Anniversary of E.Kogan - blitz', 'Odessa', '2020-08-23 12:30:00');
+('Days of Wloclawek 2020', 'Wloclawek', '2020-10-23 12:30:00'),
+('IV Amatorska Liga Szachowa w Lublinie 2020', 'Lublin', '2020-08-26 12:30:00'),
+('100th Anniversary of E.Kogan - blitz', 'Odessa', '2020-08-23 12:30:00');
 
 INSERT INTO ligaszachowa.rozegranemecze (DataRozegrania, TurniejID, Kategoria, Gracz1, Gracz2, Wynik, Etap) VALUES
 ('2020-05-23', '1', 'OPEN', '27', '1', 'Remis','Cwiercfinal'),
