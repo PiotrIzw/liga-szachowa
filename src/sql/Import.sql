@@ -53,3 +53,24 @@ INSERT INTO ligaszachowa.rozegranemecze (DataRozegrania, TurniejID, Kategoria, G
 ('2020-05-24', '1', 'OPEN', '14', '25', 'Wygrana bialych','Polfinal'),
 ('2020-05-24', '1', 'OPEN', '28', '1', 'Wygrana bialych','Polfinal'),
 ('2020-05-25', '1', 'OPEN', '28', '14', 'Wygrana bialych','Final');
+
+INSERT INTO ligaszachowa.ranking (PlayerID, Rating, Kategoria) VALUES
+('4','2863','OPEN'),
+('5','2835','OPEN'),
+('6','2791','OPEN'),
+('7','2784','OPEN'),
+('8','2778','OPEN'),
+('9','2777','OPEN'),
+('10','2773','OPEN'),
+('11','2770','OPEN'),
+('2','2812','OPEN'),
+('1','2648','OPEN'),
+('3','2649','OPEN'),
+('12','2728','OPEN'),
+('12','2812','JUNIOR'),
+('13','2709','OPEN'),
+('13','2800','JUNIOR'),
+('14','2513','OPEN'),
+('14','2803','JUNIOR'),
+('15','2620','OPEN'),
+('15','2700','JUNIOR');
