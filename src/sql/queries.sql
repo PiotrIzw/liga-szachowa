@@ -17,12 +17,12 @@ WHERE ListaZawodnikow.Country='Polska' AND Ranking.Kategoria='OPEN'
 ORDER BY Ranking.Rating DESC;
 
 #3
-#Wybiera zawodnikow wedlug najwiekszej liczby punktow z kategorii JUNIOR powyzej roku urodzenia 2002.
+#Wybiera zawodnikow wedlug najwiekszej liczby punktow z kategorii JUNIOR powyzej roku urodzenia 2000.
 
 SELECT ListaZawodnikow.PlayerID, ListaZawodnikow.FirstName, ListaZawodnikow.Surname, ListaZawodnikow.Country, Ranking.Rating, Ranking.Kategoria
 FROM ListaZawodnikow
 INNER JOIN Ranking ON ListaZawodnikow.PlayerID = Ranking.PlayerID
-WHERE Ranking.Kategoria='JUNIOR' AND ListaZawodnikow.BYear>='2002-01-01'
+WHERE Ranking.Kategoria='JUNIOR' AND ListaZawodnikow.BYear>='2000-01-01'
 ORDER BY Ranking.Rating DESC;
 
 #4
