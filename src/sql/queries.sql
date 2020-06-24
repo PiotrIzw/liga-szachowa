@@ -81,9 +81,27 @@ SELECT Wynik, COUNT(*)
 FROM   RozegraneMecze
 WHERE  Wynik = 'Remis';
 
+#12
+#Dodaje nowy turniej i spradza
+INSERT INTO ListaTurniejow (Nazwa, MiejsceStartu, DataStartu) VALUES
+('Mistrzostwa Malopolski', 'Krakow', '2020-08-23 12:30:00');
 
+SELECT * FROM ListaTurniejow
+WHERE Nazwa = 'Mistrzostwa Malopolski';
 
+#13
+#Przeklada datę turnieju i wyświetla
+UPDATE ListaTurniejow
+SET DataStartu = '2020-09-01 10:00:00'
+WHERE Nazwa = 'Mistrzostwa Malopolski';
 
+SELECT * FROM ListaTurniejow
+WHERE Nazwa = 'Mistrzostwa Malopolski';
+
+#14
+#Usuwa turniej z bazy
+DELETE FROM ListaTurniejow
+WHERE Nazwa = 'Mistrzostwa Malopolski';
 
 
 
