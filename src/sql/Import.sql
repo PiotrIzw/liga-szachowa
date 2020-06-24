@@ -26,10 +26,10 @@ INSERT INTO ListaZawodnikow (FirstName, Surname, Country, BYear) VALUES
 ('Jan-Krzysztof', 'Duda', 'Polska', '1998-12-29'),
 ('Radoslaw', 'Wojtaszek', 'Polska', '1987-12-29'),
 ('Marek', 'Kowalski', 'Polska', '2000-12-29'),
-('Edward', 'Woźniak', 'Polska', '2002-12-29'),
+('Edward', 'Wozniak', 'Polska', '2002-12-29'),
 ('Marek', 'Markowski', 'Polska', '1994-12-29'),
 ('Marcin', 'Gagatek', 'Polska', '1978-12-29'),
-('Olga', 'Badelka', 'Białoruś', '2002-12-29');
+('Olga', 'Badelka', 'Bialorus', '2002-12-29');
 
 INSERT INTO ligaszachowa.listaturniejow (Nazwa, MiejsceStartu, DataStartu) VALUES
 ('Mistrzostwa Polski', 'Krakow', '2020-05-23 12:30:00'),
