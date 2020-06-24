@@ -63,13 +63,13 @@ ORDER BY Surname ASC;
 #Wyswietla dane statysyczne - jak wiele razy wygrały białe (Gracz1 = biale)
 SELECT COUNT(*)
 FROM   RozegraneMecze
-WHERE  Wynik = 'Wygrana'
+WHERE  Wynik = 'Wygrana bialych'
 
 #10
 #Wyswietla dane statysyczne - jak wiele razy wygrały czarne (Gracz2 = czarne)
 SELECT COUNT(*)
 FROM   RozegraneMecze
-WHERE  Wynik = 'Przegrana'
+WHERE  Wynik = 'Wygrana czarnych'
 
 #11
 #Wyswietla dane statysyczne - jak wiele razy wystąpił remis
