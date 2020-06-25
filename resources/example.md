@@ -41,7 +41,15 @@ Wyjątkowo pomiędzy tabelą rankingu i listą zawodników występuje relacja wi
 14. Usunięcie turnieju z bazy <br>
 ![img](https://i.imgur.com/klzHEQW.png)
 ## Aplikacja
-Nasza aplikacja została napisana w języku Python. 
+Nasza aplikacja została napisana w języku Python. Na początku wyświetla się menu w którym możliwe jest zalogowanie
+na zawodnika, wyświetlenie interesujących statystyk lub rankingu i wyjście z aplikacji. <br>
+
+Dla zawodnika mamy możliwość rejestracji i sprawdzenia nadchodzących turniejów. Oto przykład rejestracji: <br>
+
+W menu Statystyki możliwe jest sprawdzenie statystyk konkretnego zawodnika oraz tego którego koloru szachy wygrywały najczęściej. Przykład wyświetlenia statystyk zawodnika: <br>
+
+Ostatnią opcją jest wyświetlenie rankingów. Jako że w naszej bazie wyróżniamy trzy kategoriie to musimy wybrać której konkretnie kategorii ranking nas interesuje. Oto przykład dla kategorii WOMAN: <br>
 
 ## Dodatkowe uwagi
 W tej sekcji możecie zawrzeć informacje, których nie jesteście w stanie przypisać do pozostałych. Mogą to być również jakieś komentarze, wolne uwagi, itp.
+
