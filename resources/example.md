@@ -43,13 +43,13 @@ Wyjątkowo pomiędzy tabelą rankingu i listą zawodników występuje relacja wi
 ## Aplikacja
 Nasza aplikacja została napisana w języku Python. Na początku wyświetla się menu w którym możliwe jest zalogowanie
 na zawodnika, wyświetlenie interesujących statystyk lub rankingu i wyjście z aplikacji. <br>
-![img](https://i.imgur.com/Ak8ohHo.png)
+![img](https://i.imgur.com/Ak8ohHo.png) <br>
 Dla zawodnika mamy możliwość rejestracji i sprawdzenia nadchodzących turniejów. Oto przykład rejestracji: <br>
-![img](https://i.imgur.com/AHCbAM5.png)
+![img](https://i.imgur.com/AHCbAM5.png) <br>
 W menu Statystyki możliwe jest sprawdzenie statystyk konkretnego zawodnika oraz tego którego koloru szachy wygrywały najczęściej. Przykład wyświetlenia statystyk zawodnika: <br>
-![img](https://i.imgur.com/klzHEQW.png)
+![img](https://i.imgur.com/klzHEQW.png) <br>
 Ostatnią opcją jest wyświetlenie rankingów. Jako że w naszej bazie wyróżniamy trzy kategoriie to musimy wybrać której konkretnie kategorii ranking nas interesuje. Oto przykład dla kategorii WOMAN: <br>
-![img](https://i.imgur.com/rkQNuEf.png)
+![img](https://i.imgur.com/rkQNuEf.png) <br>
 ## Dodatkowe uwagi
 W tej sekcji możecie zawrzeć informacje, których nie jesteście w stanie przypisać do pozostałych. Mogą to być również jakieś komentarze, wolne uwagi, itp.
 
