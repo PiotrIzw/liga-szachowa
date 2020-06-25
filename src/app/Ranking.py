@@ -80,10 +80,11 @@ def showPlayerRanking():
         db='LigaSzachowa'
     )
 
-    PlayerID = input("Podaj id zawodnika: \n")
+    FirstName = input("Podaj imie zawodnika: \n")
+    Surname = input("Podaj nazwisko zawodnika: \n")
     sql = "SELECT ListaZawodnikow.PlayerID, ListaZawodnikow.FirstName, ListaZawodnikow.Surname, ListaZawodnikow.Country, Ranking.Rating, Ranking.Kategoria \
         FROM ListaZawodnikow INNER JOIN Ranking ON ListaZawodnikow.PlayerID = Ranking.PlayerID \
-        WHERE ListaZawodnikow.PlayerID='%s';" % PlayerID
+        WHERE ListaZawodnikow.FirstName='%s' AND ListaZawodnikow.Surname='%s';" % (FirstName, Surname)
     try:
         with connection.cursor() as cursor:
             cursor.execute(sql)

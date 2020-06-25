@@ -8,10 +8,11 @@ def showPlayerStatistics():
         db='LigaSzachowa'
     )
 
-    PlayerID = input("Podaj id zawodnika: \n")
+    FirstName = input("Podaj imie zawodnika: \n")
+    Surname = input("Podaj nazwisko zawodnika: \n")
     sql = "SELECT RozegraneMecze.MatchID, RozegraneMecze.Wynik FROM RozegraneMecze \
     INNER JOIN ListaZawodnikow ON RozegraneMecze.Gracz1 = ListaZawodnikow.PlayerID\
-    WHERE ListaZawodnikow.PlayerID='%s';" % PlayerID
+    WHERE ListaZawodnikow.FirstName='%s' AND ListaZawodnikow.Surname='%s';" % (FirstName, Surname)
     try:
         with connection.cursor() as cursor:
             cursor.execute(sql)
