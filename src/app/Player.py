@@ -13,7 +13,7 @@ def createPlayer():
     country = input("Podaj kraj pochodzenia: \n")
     b_year = input("Podaj rok urodzenia (YYYY-MM-DD): \n")
 
-    sql = "INSERT INTO `ListaZawodnikow` (`Name`, `Surname`, `Country`, `BYear`)" \
+    sql = "INSERT INTO `ListaZawodnikow` (`FirstName`, `Surname`, `Country`, `BYear`)" \
           " VALUES ('%s', '%s', '%s', '%s');" % (name, surname, country, b_year)
     print(sql)
     try:
@@ -25,6 +25,7 @@ def createPlayer():
                 print('\n')
                 for r in row:
                     print(r, end=' ')
+            print("Zostales pomyslnie zarejestrowany.\n")
         connection.commit()
     finally:
         connection.close()
@@ -49,14 +50,36 @@ def deletePlayer():
         connection.close()
 
 
-def playerMenu():
-    print("1. Dodaj zawodnika:")
-    print("2. Usuń zawodnika:")
-    what_to_do = input("Wybierz jedną z opcji:\n")
+def showTournaments():
+    sql = "SELECT Nazwa, MiejsceStartu, DataStartu FROM ListaTurniejow WHERE DataStartu>=CURDATE();"
+    try:
+        with connection.cursor() as cursor:
+            cursor.execute(sql)
+            rows = cursor.fetchall()
+            for row in rows:
+                print('\n')
+                for r in row:
+                    print(r, end=' | ')
+            print("\n")
+    finally:
+        connection.close()
 
-    if what_to_do == '1':
-        createPlayer()
-    elif what_to_do == '2':
-        deletePlayer()
-    else:
-        return
+
+def playerMenu():
+    while True:
+        print("1. Rejestracja")
+        print("2. Aktualne turnieje")
+        print("3. Zapisz sie na turniej")
+        print("4. Powrot")
+        what_to_do = input("Wybierz jedną z opcji:\n")
+
+        if what_to_do == '1':
+            createPlayer()
+        elif what_to_do == '2':
+            showTournaments()
+        elif what_to_do == '3':
+            print("to do")
+        elif what_to_do == '4':
+            return
+        else:
+            print("Bledny wybor. Sprobuj jeszcze raz.\n")
