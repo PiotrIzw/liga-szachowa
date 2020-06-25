@@ -8,7 +8,7 @@ def showRankingOPEN():
         db='LigaSzachowa'
     )
 
-    sql = "SELECT ListaZawodnikow.FirstName, ListaZawodnikow.Surname, ListaZawodnikow.Country, Ranking.Rating, Ranking.Kategoria \
+    sql = "SELECT ListaZawodnikow.FirstName, ListaZawodnikow.Surname, ListaZawodnikow.Country, Ranking.Rating \
     FROM ListaZawodnikow INNER JOIN Ranking ON ListaZawodnikow.PlayerID = Ranking.PlayerID \
     WHERE Ranking.Kategoria='OPEN' \
     ORDER BY Ranking.Rating DESC LIMIT 10;"
@@ -35,7 +35,7 @@ def showRankingJUNIOR():
         db='LigaSzachowa'
     )
 
-    sql = "SELECT ListaZawodnikow.FirstName, ListaZawodnikow.Surname, ListaZawodnikow.Country, Ranking.Rating, Ranking.Kategoria \
+    sql = "SELECT ListaZawodnikow.FirstName, ListaZawodnikow.Surname, ListaZawodnikow.Country, Ranking.Rating \
         FROM ListaZawodnikow INNER JOIN Ranking ON ListaZawodnikow.PlayerID = Ranking.PlayerID \
         WHERE Ranking.Kategoria='JUNIOR' \
         ORDER BY Ranking.Rating DESC LIMIT 10;"
@@ -62,7 +62,7 @@ def showRankingWOMAN():
         db='LigaSzachowa'
     )
 
-    sql = "SELECT ListaZawodnikow.FirstName, ListaZawodnikow.Surname, ListaZawodnikow.Country, Ranking.Rating, Ranking.Kategoria \
+    sql = "SELECT ListaZawodnikow.FirstName, ListaZawodnikow.Surname, ListaZawodnikow.Country, Ranking.Rating \
         FROM ListaZawodnikow INNER JOIN Ranking ON ListaZawodnikow.PlayerID = Ranking.PlayerID \
         WHERE Ranking.Kategoria='WOMAN' \
         ORDER BY Ranking.Rating DESC LIMIT 10;"
