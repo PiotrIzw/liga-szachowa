@@ -12,33 +12,33 @@ Wyjątkowo pomiędzy tabelą rankingu i listą zawodników występuje relacja wi
 
 ![alt text](https://raw.githubusercontent.com/phajder-databases/db2020-project-liga-szachowa/2985f1473cb6aab987e6bc61ed606e5cbb2c6cd3/resources/LigaSzachowa.svg)
 ## Implementacja zapytań SQL
-1. Wyświetlenie 10 zawodników z najwiekszą ilością punktow z kategorii OPEN
+1. Wyświetlenie 10 zawodników z najwiekszą ilością punktow z kategorii OPEN 
 ![img](https://i.imgur.com/dgUZw1g.png)
-2. Wyświetlenie 10 zawodników z najwiekszą ilością punktow z kategorii OPEN z Polski
+2. Wyświetlenie 10 zawodników z najwiekszą ilością punktow z kategorii OPEN z Polski <br>
 ![img](https://i.imgur.com/Yfk8bkK.png)
-3. Wyświetlenie 5 zawodników z najwiekszą ilością punktow z kategorii JUNIOR urodzonych po roku 2002
+3. Wyświetlenie 5 zawodników z najwiekszą ilością punktow z kategorii JUNIOR urodzonych po roku 2002 <br>
 ![img](https://i.imgur.com/oW6rD4l.png)
-4. Wyswietlenie 10 najmlodszych zawodnikow
+4. Wyswietlenie 10 najmlodszych zawodnikow <br>
 ![img](https://i.imgur.com/GGLb44o.png)
-5. Wyswietlenie listy wszystkich turniejow ktore sie jeszcze nie odbyly
+5. Wyswietlenie listy wszystkich turniejow ktore sie jeszcze nie odbyly <br> 
 ![img](https://i.imgur.com/v3C4GAG.png)
-6. Wyswietlenie listy wszystkich meczy rozegranych przez Adama Kowalskiego
+6. Wyswietlenie listy wszystkich meczy rozegranych przez Adama Kowalskiego <br>
 ![img](https://i.imgur.com/kFMTs10.png)
-7. Wyswietlenie listę wszystkich rozegranych meczy na Mistrzowstach Polski
+7. Wyswietlenie listę wszystkich rozegranych meczy na Mistrzowstach Polski <br>
 ![img](https://i.imgur.com/8jFS10H.png)
-8. Wyswietlenie wszystkich zawodnikow alfabetycznie wg. nazwiska.
+8. Wyswietlenie wszystkich zawodnikow alfabetycznie wg. nazwiska <br>
 ![img](https://i.imgur.com/NUcXFgW.png)
-9. Wyswietlenie danych statystycznych - jak wiele razy wygrały białe (Gracz1 = biale)
+9. Wyswietlenie danych statystycznych - jak wiele razy wygrały białe (Gracz1 = biale) <br>
 ![img](https://i.imgur.com/PcBOc09.png)
-10. Wyswietlenie danych statystycznych - jak wiele razy wygrały czarne (Gracz2 = czarne)
+10. Wyswietlenie danych statystycznych - jak wiele razy wygrały czarne (Gracz2 = czarne) <br>
 ![img](https://i.imgur.com/B6qW1bs.png)
-11. Wyswietlenie danych statystycznych - jak wiele razy wystąpił remis
+11. Wyswietlenie danych statystycznych - jak wiele razy wystąpił remis <br>
 ![img](https://i.imgur.com/qDJHnMe.png)
-12. Dodanie nowego turnieju i sprawdzenie jego wartości
+12. Dodanie nowego turnieju i sprawdzenie jego wartości <br>
 ![img](https://i.imgur.com/Y9IV6jK.png)
-13. Przełożenie daty turnieju i sprawdzenie jego wartości
+13. Przełożenie daty turnieju i sprawdzenie jego wartości <br>
 ![img](https://i.imgur.com/KmzY90R.png)
-14. Usunięcie turnieju z bazy
+14. Usunięcie turnieju z bazy <br>
 ![img](https://i.imgur.com/klzHEQW.png)
 ## Aplikacja
 Tutaj należy opisać aplikację, która wykorzystuje zapytania SQL z poprzedniego kroku. Można, jednak nie jest to konieczne, wrzucić tutaj istotne snippety z Waszych aplikacji.
