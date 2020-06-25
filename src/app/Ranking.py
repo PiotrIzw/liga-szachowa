@@ -8,7 +8,7 @@ def showRankingOPEN():
         db='LigaSzachowa'
     )
 
-    sql = "SELECT ListaZawodnikow.PlayerID, ListaZawodnikow.FirstName, ListaZawodnikow.Surname, ListaZawodnikow.Country, Ranking.Rating, Ranking.Kategoria \
+    sql = "SELECT ListaZawodnikow.FirstName, ListaZawodnikow.Surname, ListaZawodnikow.Country, Ranking.Rating, Ranking.Kategoria \
     FROM ListaZawodnikow INNER JOIN Ranking ON ListaZawodnikow.PlayerID = Ranking.PlayerID \
     WHERE Ranking.Kategoria='OPEN' \
     ORDER BY Ranking.Rating DESC LIMIT 10;"
@@ -16,10 +16,13 @@ def showRankingOPEN():
         with connection.cursor() as cursor:
             cursor.execute(sql)
             rows = cursor.fetchall()
+            position = 1
             for row in rows:
                 print('\n')
+                print("[", position, "]")
                 for r in row:
                     print(r, end=' | ')
+                position += 1
             print("\n")
     finally:
         connection.close()
@@ -32,7 +35,7 @@ def showRankingJUNIOR():
         db='LigaSzachowa'
     )
 
-    sql = "SELECT ListaZawodnikow.PlayerID, ListaZawodnikow.FirstName, ListaZawodnikow.Surname, ListaZawodnikow.Country, Ranking.Rating, Ranking.Kategoria \
+    sql = "SELECT ListaZawodnikow.FirstName, ListaZawodnikow.Surname, ListaZawodnikow.Country, Ranking.Rating, Ranking.Kategoria \
         FROM ListaZawodnikow INNER JOIN Ranking ON ListaZawodnikow.PlayerID = Ranking.PlayerID \
         WHERE Ranking.Kategoria='JUNIOR' \
         ORDER BY Ranking.Rating DESC LIMIT 10;"
@@ -40,10 +43,13 @@ def showRankingJUNIOR():
         with connection.cursor() as cursor:
             cursor.execute(sql)
             rows = cursor.fetchall()
+            position = 1
             for row in rows:
                 print('\n')
+                print("[", position, "]")
                 for r in row:
                     print(r, end=' | ')
+                position += 1
             print("\n")
     finally:
         connection.close()
@@ -56,7 +62,7 @@ def showRankingWOMAN():
         db='LigaSzachowa'
     )
 
-    sql = "SELECT ListaZawodnikow.PlayerID, ListaZawodnikow.FirstName, ListaZawodnikow.Surname, ListaZawodnikow.Country, Ranking.Rating, Ranking.Kategoria \
+    sql = "SELECT ListaZawodnikow.FirstName, ListaZawodnikow.Surname, ListaZawodnikow.Country, Ranking.Rating, Ranking.Kategoria \
         FROM ListaZawodnikow INNER JOIN Ranking ON ListaZawodnikow.PlayerID = Ranking.PlayerID \
         WHERE Ranking.Kategoria='WOMAN' \
         ORDER BY Ranking.Rating DESC LIMIT 10;"
@@ -64,10 +70,13 @@ def showRankingWOMAN():
         with connection.cursor() as cursor:
             cursor.execute(sql)
             rows = cursor.fetchall()
+            position = 1
             for row in rows:
                 print('\n')
+                print("[", position, "]")
                 for r in row:
                     print(r, end=' | ')
+                position += 1
             print("\n")
     finally:
         connection.close()
@@ -92,7 +101,8 @@ def showPlayerRanking():
             for row in rows:
                 print('\n')
                 for r in row:
-                    print(r, end=' | ')
+                    print(position, r, end=' | ')
+
             print("\n")
     finally:
         connection.close()
