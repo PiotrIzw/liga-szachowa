@@ -8,8 +8,7 @@
 ## Projekt bazy danych
 Na schemacie mamy przedstawione 4 tabele: ListaZawodnikow, RozegraneMecze, ListaTurniejow i Ranking.
 Jeden zawodnik może się pojawić w rankingu zarówno dla kategorii
-LigaSzachowa.svg
- 
+![alt text](https://raw.githubusercontent.com/phajder-databases/db2020-project-liga-szachowa/2985f1473cb6aab987e6bc61ed606e5cbb2c6cd3/resources/LigaSzachowa.svg)
 ## Implementacja zapytań SQL
 1. Wyświetlenie 10 zawodników z najwiekszą ilością punktow z kategorii OPEN
 2. Wyświetlenie 10 zawodników z najwiekszą ilością punktow z kategorii OPEN z Polski
