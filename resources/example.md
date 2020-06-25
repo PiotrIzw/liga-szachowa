@@ -10,7 +10,7 @@ Na schemacie mamy przedstawione 4 tabele: ListaZawodnikow, RozegraneMecze, Lista
 Jeden zawodnik może się pojawić w rankingu zarówno dla kategorii OPEN jak i JUNIOR, dlatego występuje tu relacja jeden do wielu. Ta sama relacja jest pomiędzy tabel turniejów i rozegranych meczy.
 Wyjątkowo pomiędzy tabelą rankingu i listą zawodników występuje relacja wiele do wielu.
 
-![alt text](https://raw.githubusercontent.com/phajder-databases/db2020-project-liga-szachowa/2985f1473cb6aab987e6bc61ed606e5cbb2c6cd3/resources/LigaSzachowa.svg)
+![alt text](https://raw.githubusercontent.com/phajder-databases/db2020-project-liga-szachowa/3688e88b3ad2ce7247aa0670a20d7dbe8e569d02/resources/LigaSzachowa.svg)
 ## Implementacja zapytań SQL
 1. Wyświetlenie 10 zawodników z najwiekszą ilością punktow z kategorii OPEN 
 ![img](https://i.imgur.com/dgUZw1g.png)
@@ -41,7 +41,7 @@ Wyjątkowo pomiędzy tabelą rankingu i listą zawodników występuje relacja wi
 14. Usunięcie turnieju z bazy <br>
 ![img](https://i.imgur.com/klzHEQW.png)
 ## Aplikacja
-Tutaj należy opisać aplikację, która wykorzystuje zapytania SQL z poprzedniego kroku. Można, jednak nie jest to konieczne, wrzucić tutaj istotne snippety z Waszych aplikacji.
+Nasza aplikacja została napisana w języku Python. 
 
 ## Dodatkowe uwagi
 W tej sekcji możecie zawrzeć informacje, których nie jesteście w stanie przypisać do pozostałych. Mogą to być również jakieś komentarze, wolne uwagi, itp.
