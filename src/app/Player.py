@@ -1,13 +1,13 @@
 import pymysql
 
-connection = pymysql.Connect(
-    host='localhost',
-    user='root',
-    db='LigaSzachowa'
-)
-
 
 def createPlayer():
+    connection = pymysql.Connect(
+        host='localhost',
+        user='root',
+        db='LigaSzachowa'
+    )
+
     name = input("Podaj imię zawodnika: \n")
     surname = input("Podaj nazwisko: \n")
     country = input("Podaj kraj pochodzenia: \n")
@@ -32,6 +32,12 @@ def createPlayer():
 
 
 def deletePlayer():
+    connection = pymysql.Connect(
+        host='localhost',
+        user='root',
+        db='LigaSzachowa'
+    )
+
     player_id = input("Podaj id zawodnika: \n")
 
     sql = "DELETE FROM`ListaZawodnikow` WHERE (`PlayerID`) = %s;" % player_id
@@ -51,6 +57,12 @@ def deletePlayer():
 
 
 def showTournaments():
+    connection = pymysql.Connect(
+        host='localhost',
+        user='root',
+        db='LigaSzachowa'
+    )
+
     sql = "SELECT Nazwa, MiejsceStartu, DataStartu FROM ListaTurniejow WHERE DataStartu>=CURDATE();"
     try:
         with connection.cursor() as cursor:
