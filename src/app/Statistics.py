@@ -10,7 +10,7 @@ def showPlayerStatistics():
 
     FirstName = input("Podaj imie zawodnika: \n")
     Surname = input("Podaj nazwisko zawodnika: \n")
-    sql = "SELECT RozegraneMecze.MatchID, RozegraneMecze.Wynik FROM RozegraneMecze \
+    sql = "SELECT ListaZawodnikow.FirstName, ListaZawodnikow.Surname, RozegraneMecze.MatchID, RozegraneMecze.Wynik FROM RozegraneMecze \
     INNER JOIN ListaZawodnikow ON RozegraneMecze.Gracz1 = ListaZawodnikow.PlayerID\
     WHERE ListaZawodnikow.FirstName='%s' AND ListaZawodnikow.Surname='%s';" % (FirstName, Surname)
     try:
