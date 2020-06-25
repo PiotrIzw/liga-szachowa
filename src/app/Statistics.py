@@ -1,36 +1,6 @@
 import pymysql
 
 
-def createPlayer():
-    connection = pymysql.Connect(
-        host='localhost',
-        user='root',
-        db='LigaSzachowa'
-    )
-
-    name = input("Podaj imię zawodnika: \n")
-    surname = input("Podaj nazwisko: \n")
-    country = input("Podaj kraj pochodzenia: \n")
-    b_year = input("Podaj rok urodzenia (YYYY-MM-DD): \n")
-
-    sql = "INSERT INTO `ListaZawodnikow` (`FirstName`, `Surname`, `Country`, `BYear`)" \
-          " VALUES ('%s', '%s', '%s', '%s');" % (name, surname, country, b_year)
-    print(sql)
-    try:
-        with connection.cursor() as cursor:
-            cursor.execute(sql)
-            connection.commit()
-            rows = cursor.fetchall()
-            for row in rows:
-                print('\n')
-                for r in row:
-                    print(r, end=' ')
-            print("Zostales pomyslnie zarejestrowany.\n")
-        connection.commit()
-    finally:
-        connection.close()
-
-
 def showPlayerStatistics():
     connection = pymysql.Connect(
         host='localhost',
