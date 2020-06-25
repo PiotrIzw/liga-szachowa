@@ -1,7 +1,6 @@
-import os
-
 from src.app import Player
 from src.app import Statistics
+from src.app import Ranking
 
 while True:
     print("Menu:")
@@ -15,7 +14,7 @@ while True:
     elif what_to_do == '2':
         Statistics.statisticsMenu()
     elif what_to_do == '3':
-        print("...")
+        Ranking.rankingMenu()
     elif what_to_do == '4':
         print("Do zobaczenia :)")
         exit()
