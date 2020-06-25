@@ -46,8 +46,8 @@ na zawodnika, wyświetlenie interesujących statystyk lub rankingu i wyjście z 
 ![img](https://i.imgur.com/Ak8ohHo.png) <br>
 Dla zawodnika mamy możliwość rejestracji i sprawdzenia nadchodzących turniejów. Oto przykład rejestracji: <br>
 ![img](https://i.imgur.com/AHCbAM5.png) <br>
-W menu Statystyki możliwe jest sprawdzenie statystyk konkretnego zawodnika oraz tego którego koloru szachy wygrywały najczęściej. Przykład wyświetlenia statystyk zawodnika: <br>
-![img](https://i.imgur.com/klzHEQW.png) <br>
+W menu Statystyki możliwe jest sprawdzenie statystyk konkretnego zawodnika oraz tego którego koloru szachy wygrywały najczęściej. Przykład wyświetlenia statystyk wygranych partii przez białe, czarne i remisów: <br>
+![img](https://i.imgur.com/YNQeR5O.png) <br>
 Ostatnią opcją jest wyświetlenie rankingów. Jako że w naszej bazie wyróżniamy trzy kategoriie to musimy wybrać której konkretnie kategorii ranking nas interesuje. Oto przykład dla kategorii WOMAN: <br>
 ![img](https://i.imgur.com/rkQNuEf.png) <br>
 ## Dodatkowe uwagi
