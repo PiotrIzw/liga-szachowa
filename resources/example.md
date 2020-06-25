@@ -50,6 +50,5 @@ W menu Statystyki możliwe jest sprawdzenie statystyk konkretnego zawodnika oraz
 ![img](https://i.imgur.com/YNQeR5O.png) <br>
 Ostatnią opcją jest wyświetlenie rankingów. Jako że w naszej bazie wyróżniamy trzy kategoriie to musimy wybrać której konkretnie kategorii ranking nas interesuje. Oto przykład dla kategorii WOMAN: <br>
 ![img](https://i.imgur.com/rkQNuEf.png) <br>
-## Dodatkowe uwagi
-W tej sekcji możecie zawrzeć informacje, których nie jesteście w stanie przypisać do pozostałych. Mogą to być również jakieś komentarze, wolne uwagi, itp.
+
 
