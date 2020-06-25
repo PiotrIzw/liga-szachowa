@@ -81,8 +81,7 @@ def playerMenu():
     while True:
         print("1. Rejestracja")
         print("2. Aktualne turnieje")
-        print("3. Zapisz sie na turniej")
-        print("4. Powrot")
+        print("3. Powrot")
         what_to_do = input("Wybierz jedną z opcji:\n")
 
         if what_to_do == '1':
@@ -90,8 +89,6 @@ def playerMenu():
         elif what_to_do == '2':
             showTournaments()
         elif what_to_do == '3':
-            print("to do")
-        elif what_to_do == '4':
             return
         else:
             print("Bledny wybor. Sprobuj jeszcze raz.\n")
